@@ -41,6 +41,74 @@ address {
     margin-left: auto;
     margin-right: auto;
    }
+
+   .hero-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+   }
+
+   .hero-button-icon {}
+
+   .header-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+   }
+
+   .header-modal {
+    min-width: 320px;
+    min-height: 640px;
+    position: absolute;
+    background-color: #fcfcfc;
+   }
+
+   .hero-modal-btn {
+    position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .hero-modal-list {}
+
+   .hero-modal-icon {}
+
+   .hero-modal-linc {
+    color: #2E2F42;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        position: relative;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+
+   .hero-modal-contacts-list {}
+
+   .hero-modal-contacts-icon {}
+
 .header-container {
     display: flex;
 }
@@ -63,7 +131,7 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px
+    margin-right: 149px;
 }
 
 .header-logo-aside {
@@ -73,6 +141,7 @@ address {
 .header-nav-list {
     display: flex;
     gap: 40px;
+    display: none;
 }
 
 .header-nav-item {
@@ -135,6 +204,7 @@ address {
 .header-address-list {
     display: flex;
     gap: 40px;
+    display: none;
 }
 
 .header-address-item {
@@ -176,7 +246,7 @@ address {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 228px;
+    max-width: 218px;
     margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -598,7 +668,7 @@ text-align: center;
     transform: translate(-50%, -50%) scale(1);
     width: 288px;
     min-height: 584px;
-    background: #fcfcfc;
+    background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -788,7 +858,15 @@ border-color: #4D5AE5;
     .container {
      max-width: 768px;
     }
-
+    .hero-button {
+        display: none;
+    }
+    .header-nav-list {
+        display: flex;
+    }
+    .header-address-list {
+        display: flex;
+    }
     .hero {
         max-width: 768px;
         padding: 112px 0;
