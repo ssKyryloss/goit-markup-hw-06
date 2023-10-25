@@ -303,13 +303,23 @@ color: var(--IRIS, #4D5AE5);
 .main {}
 
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bgr.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bgr-mob.jpg);
     padding: 72px 0;
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bgr-mob-x2.png);
+    }
 }
 
 .hero-title {
@@ -572,6 +582,9 @@ text-align: center;
     letter-spacing: 0.02em;
 }
 
+.container-img-portfolio {
+    flex-shrink: 0;
+}
 
 .footer {
     background-color: #2e2f42;
@@ -946,10 +959,23 @@ border-color: #4D5AE5;
         display: flex;
     }
     .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bgr-tab.png);
         max-width: 768px;
         padding: 112px 0;
 
     }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero-bgr-tab-x2.png);
+            }
+        }
 
     .hero-title {
         max-width: 496px;
@@ -1046,8 +1072,21 @@ border-color: #4D5AE5;
         font-style: 16px;
     }
     .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bgr.png);
     max-width: 1440px;
     padding: 188px 0;
+    }
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bgr-x2.png);
+        }
     }
 
     .hero-title {
